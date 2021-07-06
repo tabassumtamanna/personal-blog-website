@@ -1,0 +1,206 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+    <title>California Through My Eyes</title>
+
+    <style>
+        
+        #container{
+            display: grid;
+            width: 100%;
+            grid-template-columns: 200px 300px 300px;
+            grid-template-rows: 150px 800px 250px;
+            grid-template-areas: 
+            "hd hd hd ha"
+            "main main main main"
+            "ft ft ft ft";
+            border: 1px solid yellow;
+        }
+
+        #header{
+            border: 1px solid black;
+            grid-area: hd;
+        }
+
+        #footer{
+            border: 1px solid black;
+            grid-area: ft;
+        }
+
+        #content{
+            grid-area: main;
+            border: 1px solid black;
+        }
+
+        /* #main_content{
+            border: 1px solid black;
+            height: 200px;
+        }
+
+        #other_content{
+            border: 1px solid black;
+
+        } */
+
+        .box{
+            display: flex;
+            align-items: center;
+            /* justify-content: center; */
+            /* border: 1px solid blue; */
+            
+        }
+
+        #nestedGrid{
+            display: grid;
+            width:100%;
+            height: 100%;
+            margin:auto;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 350px 30px 350px;
+            grid-gap:15px;
+            grid-template-areas: 
+            "top top top"
+            "middle middle middle"
+            "bottomLeft bottomMiddle bottomRight";
+            border: 1px solid rgb(247, 182, 96);
+        }
+
+        .nestedBox{
+            display: flex;
+            flex-direction: column;
+            /* align-items: center; */
+            /* justify-content: center; */
+            border: 1px solid lightskyblue;
+            padding: 5px;
+            background-color: lightblue;
+            /* border: 1px solid orange; */
+        }
+        #tour1{
+            grid-area: top;
+            background-color: rgb(157, 210, 157);
+        }
+
+        #tour2{
+            grid-area: middle;
+            justify-content: left;
+            background-color: white;
+            border: none;
+        }
+
+        #tour3{
+            grid-area: bottomLeft;
+        }
+
+        #tour4{
+            grid-area: bottomMiddle;
+        }
+
+        #tour5{
+            grid-area: bottomRight;
+        }
+        
+
+        #nestedTour1{
+            display: grid;
+            width:100%;
+            height: 100%;
+            margin:auto;
+            grid-template-columns: 50% 50%;
+            grid-template-rows: 98% 2%;
+            grid-gap:10px;
+            grid-template-areas: 
+            "topLeft topRight";
+            /* border: 1px solid orange; */
+        }
+
+        .tour1Box{
+            display: flex;
+            flex-direction: column;
+            /* border: 1px solid black; */
+        }
+
+        #tour1Img{
+            grid-area: topLeft;
+        }
+
+        #tour1Dec{
+            grid-area: topRight;
+        }
+
+        #tour1Box-top{
+            height: 70%;
+        }
+
+        #tour1Box-top > img{
+            height: 250px;
+            width: 100%;
+        }
+
+        #tour1Box-bottom{
+            height: 30%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+        }
+
+        #tour1Box-bottom > div{
+            width: 100%;
+        }
+
+        #tour1Box-bottom > div > img{
+            width: 100%;
+            height: 100%;
+            
+        }
+
+        
+
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header" class="box"> 
+            <h1>California Through My Eyes</h1>
+        </div>
+        <div id="content" class="box">
+            <div id="nestedGrid">
+                <div class="nestedBox" id="tour1"> 
+                    <div id="nestedTour1">
+                         <div class="tour1Box" id="tour1Img">
+                            <div id="tour1Box-top"><img src="images/san-diego.jpg" /></div>
+                            <div id="tour1Box-bottom">
+                                <div class="small-img"><img src="images/san-diego-1.jpg" /></div>
+                                <div class="small-img"><img src="images/san-diego-2.jpg" /></div>
+                                <div class="small-img"><img src="images/san-diego-3.jpg" /></div>
+                                <div class="small-img"><img src="images/san-diego-1.jpg" /></div>
+                            </div>
+                         </div>
+                         <div class="tour1Box" id="tour1Dec">
+                             <div> 
+                                 <h4>Tour of San Diego</h4> 
+                            </div>
+                            <div>
+                                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                            </div>
+                         </div>
+                         <!-- <div class="tour1Box" id="tour1SmallImg"> threes</div> -->
+                    </div>
+                </div>
+                <div class="nestedBox" id="tour2"><h3>Other Tours</h4></div>
+                <div class="nestedBox" id="tour3"> 
+                    <div class=""><h4>Tour to Youmite</h4></div>
+                    <div><img src="images/san-diego-1.jpg" width="50"/></div>
+                    <div></div>
+                    <div></div>
+                </div>
+                <div class="nestedBox" id="tour4"> Box 4</div>
+                <div class="nestedBox" id="tour5"> Box 5</div>
+            </div>
+        </div>
+        <div id="footer" class="box"></div>
+        
+
+    </div>
+</body>
+</html>

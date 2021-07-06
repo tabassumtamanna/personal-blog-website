@@ -1,168 +1,18 @@
 <!doctype html>
+<html>
+    <head>
+        <title>California Through My Eyes</title>
 
-<html lang="en">
-<head>
-    <title>California Through My Eyes</title>
-
-    <style>
-        
-        #container{
-            display: grid;
-            width: 100%;
-            /* grid-template-columns: 200px 300px 300px; */
-            grid-template-rows: 150px 800px 250px;
-            grid-template-areas: 
-            "hd"
-            "main"
-            "ft";
-            border: 1px solid yellow;
-        }
-
-        #header{
-            border: 1px solid black;
-            grid-area: hd;
-        }
-
-        #footer{
-            border: 1px solid black;
-            grid-area: ft;
-        }
-
-        #content{
-            grid-area: main;
-            border: 1px solid black;
-        }
-
-        /* #main_content{
-            border: 1px solid black;
-            height: 200px;
-        }
-
-        #other_content{
-            border: 1px solid black;
-
-        } */
-
-        .box{
-            display: flex;
-            align-items: center;
-            /* justify-content: center; */
-            /* border: 1px solid blue; */
-            
-        }
-
-        #nestedGrid{
-            display: grid;
-            width:100%;
-            height: 100%;
-            margin:auto;
-            grid-template-columns: repeat(3, 1fr);
-            grid-template-rows: 350px 30px 350px;
-            grid-gap:15px;
-            grid-template-areas: 
-            "top top top"
-            "middle middle middle"
-            "bottomLeft bottomMiddle bottomRight";
-            border: 1px solid rgb(247, 182, 96);
-        }
-
-        .nestedBox{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            border: 1px solid lightskyblue;
-            padding: 5px;
-            background-color: lightblue;
-        }
-        #tour1{
-            grid-area: top;
-            background-color: rgb(157, 210, 157);
-        }
-
-        #tour2{
-            grid-area: middle;
-            justify-content: left;
-            background-color: white;
-            border: none;
-        }
-
-        #tour3{
-            grid-area: bottomLeft;
-        }
-
-        #tour4{
-            grid-area: bottomMiddle;
-        }
-
-        #tour5{
-            grid-area: bottomRight;
-        }
-
-        #nestedTour1{
-            display: grid;
-            width:100%;
-            height: 100%;
-            margin:auto;
-            grid-template-columns: repeat(2, 1fr);
-            grid-template-rows: 340px 100px;
-            grid-gap:10px;
-            grid-template-areas: 
-            "topLeft topRight"
-            "bottom";
-            border: 1px solid rgb(247, 182, 96);
-        }
-
-        .tour1Box{
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 5px;
-            border: 1px solid black;
-            
-        }
-
-        #tour1Img{
-            grid-area: topLeft;
-            /* background-image: url(/images/san-diego.jpg); */
-        }
-
-        #tour1Dec{
-            grid-area: topRight;
-        }
-
-        #tour1SmallImg{
-            grid-area: bottom;
-        }
-
-    </style>
-</head>
-<body>
-    <div id="container">
-        <div id="header" class="box"> 
-            <h1>California Through My Eyes</h1>
+        <style>
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div id="header"></div>
+            <div id="content"></div>
+            <div id="footer"></div>
         </div>
-        <div id="content" class="box">
-            <div id="nestedGrid">
-                <div class="nestedBox" id="tour1"> 
-                    <div id="nestedTour1">
-                         <div class="tour1Box" id="tour1Img"> one</div>
-                         <div class="tour1Box" id="tour1Dec"> two</div>
-                         <div class="tour1Box" id="tour1SmallImg"> threes</div>
-                    </div>
-                </div>
-                <div class="nestedBox" id="tour2"><h3>Other Tours</h4></div>
-                <div class="nestedBox" id="tour3"> 
-                    <div class=""></div>
-                    <div></div>
-                    <div></div>
-                </div>
-                <div class="nestedBox" id="tour4"> Box 4</div>
-                <div class="nestedBox" id="tour5"> Box 5</div>
-            </div>
-        </div>
-        <div id="footer" class="box"></div>
-        
 
-    </div>
-</body>
+    </body>
+
 </html>
