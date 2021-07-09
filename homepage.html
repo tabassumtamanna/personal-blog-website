@@ -162,18 +162,29 @@
            #footer{
                 display: flex;
                 flex-direction: row;
-                justify-content: space-between;
-                border: 1px solid blue;
+                justify-content: space-around;
+                /* border: 1px solid blue; */
+                background-color:lightgray;
            }
 
            #contact-info{
-               display: inline-flex;
                list-style-type: none;
-
+               
            }
 
+           .list-item{
+               padding: 6px;
+           }
            
-           
+           .list-item-link{
+               text-decoration: none;
+               color: gray;
+           }
+           #footer-links{
+               color: gray;
+               padding: 20px;
+               
+           }
         </style>
     </head>
     <body>
@@ -260,14 +271,14 @@
             <div class="container-box" id="footer">
                 <div id="footer-info">
                     <ul id="contact-info">
-                        <li><a href="#" >About Me </a></li>
-                        <li><a href="#" >Contact</a></li>
-                        <li><a href="#" >About Traveling</a></li>
+                        <li class="list-item"><a class="list-item-link" href="#" >About Me </a></li>
+                        <li class="list-item"><a class="list-item-link" href="#" >Contact</a></li>
+                        <li  class="list-item"><a class="list-item-link" href="#" >About Traveling</a></li>
                     </ul>
                     
                 </div>
                 <div id="footer-links">
-
+                    <b>Follow Me</b>
                 </div>
             </div>
         </div>
