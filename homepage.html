@@ -125,6 +125,10 @@
                text-align: center;
            }
 
+           #main-tour-details{
+               text-align: justify;
+           }
+
            #other-tour {
                display: flex;
                flex-direction: row;
@@ -145,13 +149,37 @@
                background-color: lightblue;
            }
 
+           .tour-widget-readmore{
+                
+                text-align: right;
+           }
+
+           .read-more{
+                text-decoration: none;
+                font-weight: 700;
+           }
+
+           #footer{
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                border: 1px solid blue;
+           }
+
+           #contact-info{
+               display: inline-flex;
+               list-style-type: none;
+
+           }
+
+           
            
         </style>
     </head>
     <body>
         <div id="container">
             <div class="container-box" id="header">
-                <h1> California through my eyes</h1>
+                <h1> California Through My Eyes</h1>
             </div>
             <div class="container-box" id="content">
                 <div id="content-grid">
@@ -179,10 +207,23 @@
 
                             </div>
                             <div class="main-tour-box" id="main-tour-info"> 
-                                <div><h3>Tour of San Diego</h3></div>
-                                <div> 
-                                    <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p>
+                                <div id="main-tour-header"><h3>Tour of San Diego</h3></div>
+                                <div id="main-tour-details"> 
+                                    <p>
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                    </p>
+
+                                    <p>
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+                                    </p>
                                 </div>
+                                <div class="tour-widget-readmore" ><a class="read-more" href="blog-post.html">Read more ...</a> </div>
                             </div>
                         </div>
                     </div>
@@ -193,32 +234,41 @@
                             <div class="tour-widget-header"><h3>Tour to San Francisco</h3></div>
                             <div class="tour-widget-img"><img src="images/san-francisco.jpg" width="350" height="250"/></div>
                             <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
-                        </div>
-                        <div class="tour-widget">
-                            <div class="tour-widget-header"><h3>Tour to Lake Tahoe</h3></div>
-                            <div class="tour-widget-img"><img src="images/lake-tahoe.jpeg" width="350" height="250"/></div>
-                            <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
-        
-                        </div>
-                        <div class="tour-widget">
-                            <div class="tour-widget-header"><h3>Tour to Big Sur</h3></div>
-                            <div class="tour-widget-img"><img src="images/big-sur.jpg" width="350" height="250"/></div>
-                            <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
-        
+                            <div class="tour-widget-readmore" ><a class="read-more" href="blog-post.html">Read more ...</a> </div>
                         </div>
                         <div class="tour-widget">
                             <div class="tour-widget-header"><h3>Tour of Yosemite</h3></div>
                             <div class="tour-widget-img"><img src="images/yosemite.jpeg" width="350" height="250" /></div>
                             <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
-        
+                            <div class="tour-widget-readmore" ><a class="read-more" href="blog-post.html">Read more ...</a> </div>
                         </div>
-                        
-
+                        <div class="tour-widget">
+                            <div class="tour-widget-header"><h3>Tour to Lake Tahoe</h3></div>
+                            <div class="tour-widget-img"><img src="images/lake-tahoe.jpeg" width="350" height="250"/></div>
+                            <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                            <div class="tour-widget-readmore" ><a class="read-more" href="blog-post.html">Read more ...</a> </div>
+                        </div>
+                        <div class="tour-widget">
+                            <div class="tour-widget-header"><h3>Tour to Big Sur</h3></div>
+                            <div class="tour-widget-img"><img src="images/big-sur.jpg" width="350" height="250"/></div>
+                            <div class="tour-widget-info"><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                            <div class="tour-widget-readmore" ><a class="read-more" href="blog-post.html">Read more ...</a> </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="container-box" id="footer">
-                
+                <div id="footer-info">
+                    <ul id="contact-info">
+                        <li><a href="#" >About Me </a></li>
+                        <li><a href="#" >Contact</a></li>
+                        <li><a href="#" >About Traveling</a></li>
+                    </ul>
+                    
+                </div>
+                <div id="footer-links">
+
+                </div>
             </div>
         </div>
 
