@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>California Through My Eyes</title>
+        <style>
+             #container{
+                display: grid;
+                /* grid-template-columns: auto; */
+                grid-template-rows: 10vh 1fr 20vh;
+                grid-gap: 5px;
+                grid-template-areas: 
+                "hd "
+                "main"
+                "ft";
+                border: 1px solid red;
+
+            }
+
+            .container-box {
+                display: flex;
+                flex-direction: column;
+                
+            }
+            
+            #header{
+                grid-area: hd;
+            }
+
+            #content{
+                grid-area: main;
+            }
+
+            #footer{
+                grid-area: ft;
+            }
+
+            #content{
+                border: 1px solid green;
+                background: #F8FA9D;
+            }
+
+        </style>
+    </head>
+    <body>
+        <div id="container">
+            <div class="container-box" id="header">
+                <h1> California Through My Eyes</h1>
+            </div>
+
+            <div class="container-box" id="content">
+               <div>
+                   <div><h3>Tour to San Diedo</h3></div>
+                   <div> June 22nd 2021</div>
+                </div>
+               <div>
+                   <div>
+                       <p>
+                        It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                        
+                        Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source.
+                       </p>
+                   </div>
+                   <div>
+
+                   </div>
+               </div>
+               <div>
+
+               </div>
+            </div>
+
+            <div class="container-box" id="footer">
+               
+            </div>
+        </div>
+
+    </body>
+</html>
