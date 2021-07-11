@@ -58,8 +58,28 @@
 
             #tour-images{
                 grid-area: bottom;
+                display: flex;
+                flex-direction: row;
+                flex-flow: wrap;
+                justify-content: space-around;
             }
 
+            .image-box{
+               width: 300px;
+               height: 400px;
+               border: 1px solid #ccc;
+               border-radius: 4px;
+               padding: 10px;
+               margin: 10px;
+               flex-grow: 1;
+               flex-shrink: initial;
+               text-align: center;
+               background-color: lightblue;
+            }
+
+            .image{
+                width: 500px;
+            }
         </style>
     </head>
     <body>
@@ -88,7 +108,18 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
                     
                 </div>
                 <div id="tour-images">
-                    
+                    <div class="image-box">
+                        <img src="images/san-diego-1.jpg" class="image" />
+                    </div>
+                    <div class="image-box">
+                        <img src="images/san-diego-2.jpg" class="image" />
+                    </div>
+                    <div class="image-box">
+                        <img src="images/san-diego-3.jpg" class="image" />
+                    </div>
+                    <div class="image-box">
+                        <img src="images/san-diego-4.jpg" class="image" />
+                    </div>
                 </div>
             </div>
 
