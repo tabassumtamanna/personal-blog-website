@@ -38,7 +38,7 @@
             #content{
                 display: grid;
                 grid-template-columns: 70% 30%;
-                grid-template-rows: 50% 50%;
+                grid-template-rows: 30% 70%;
                 grid-template-areas:
                 "topLeft topRight"
                 "bottom bottom";
@@ -65,8 +65,8 @@
             }
 
             .image-box{
-               width: 300px;
-               height: 400px;
+               /* width: 300px; */
+               /* height: 400px; */
                border: 1px solid #ccc;
                border-radius: 4px;
                padding: 10px;
@@ -74,7 +74,7 @@
                flex-grow: 1;
                flex-shrink: initial;
                text-align: center;
-               background-color: lightblue;
+               /* background-color: lightblue; */
             }
 
             .image{
@@ -104,7 +104,11 @@ Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots 
                     </div>
                 </div>
                 <div id="author-info">
-                    <img class="author-img" src="" alt="" />
+                    <div class="image-box">
+                        <div class=""><h3>Author Info</h3></div>
+                        <div class=""><img src="images/san-francisco.jpg" width="350" height="250"/></div>
+                        <div class=""><p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.</p></div>
+                    </div>
                     
                 </div>
                 <div id="tour-images">
