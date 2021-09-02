@@ -1,13 +1,13 @@
+
 #container{
     display: grid;
-    /* grid-template-columns: auto; */
-    grid-template-rows: 10vh 1fr 20vh;
+    grid-template-rows: 10vh 1fr auto;
     grid-gap: 5px;
     grid-template-areas: 
     "hd "
     "main"
     "ft";
-    /* border: 1px solid red; */
+    padding: 10px;
 
 }
 
@@ -155,9 +155,9 @@
 #footer{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
-    /* border: 1px solid blue; */
-    background-color:lightgray;
+    justify-content: space-evenly;
+    border: 1px solid blue; 
+    background-color:#c3dcc1;
 }
 
 #contact-info{
@@ -171,7 +171,7 @@
 
 .list-item-link{
    text-decoration: none;
-   color: gray;
+   color: grablacky;
 }
 #footer-links{
    color: gray;
